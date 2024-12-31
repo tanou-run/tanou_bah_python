@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="./dossier_image/tanou.bmp">
+    <style>
+        /* Global Styles */
+        body {
+            background: url(./dossier_image/Cyber-Security.jpg) no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        h1 {
+            color: red;
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+        
+        /* Styling for the container */
+        #tanou {
+            width: 350px;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            color: white;
+        }
+
+        img {
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        /* Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            background-color: #f7f7f7;
+            color: #333;
+            font-size: 16px;
+        }
+        
+        input[type="email"]:focus, input[type="password"]:focus {
+            outline: none;
+            border-color: blue;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        /* Links Styling */
+        a {
+            color: lightblue;
+            text-decoration: none;
+            font-size: 14px;
+            margin-top: 15px;
+            display: block;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #tanou {
+                width: 280px;
+                padding: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="tanou">
+        <h1>Identifier vous</h1>
+        <form action="./dossier_page/accueil.html" method="post">
+            <p><i>Connectez-vous avec vos identifiants en remplissant le formulaire ci-dessous.</i></p>
+            <img src="./dossier_image/tw.jpeg" alt="" width="50" height="50">
+            
+            <input type="email" placeholder="Votre adresse email" name="email" required>
+            <input type="password" placeholder="Votre mot de passe" name="password" required>
+            
+            <button type="submit">Se Connecter</button>
+        </form>
+
+        <a href="inscription.html">+ S'inscrire</a>
+        <a href="mdpo.html">Mot de passe oublié ?</a>
+    </div>
+</body>
+</html>

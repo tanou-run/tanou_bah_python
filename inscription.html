@@ -1,0 +1,195 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="shortcut icon" href="./dossier_image/tanou.bmp">
+    <style>
+        /* Global Styles */
+        body {
+            background: url(./dossier_image/Cyber-Security.jpg) no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        h1 {
+            color: red;
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+
+        /* Form container styles */
+        #cadre {
+            width: 380px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            max-height: 90%; /* Limit max height */
+            overflow-y: auto; /* Allow scroll if needed */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        label {
+            font-size: 16px;
+            margin-top: 10px;
+            display: block;
+        }
+
+        /* Input fields styling */
+        input[type="text"], input[type="tel"], input[type="date"], input[type="email"], 
+        input[type="password"], input[type="color"], textarea, select {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            background-color: #f7f7f7;
+            font-size: 16px;
+        }
+
+        input[type="text"]:focus, input[type="tel"]:focus, input[type="date"]:focus, 
+        input[type="email"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #4A90E2;
+        }
+
+        /* Styling for checkboxes and radio buttons */
+        input[type="radio"], input[type="checkbox"] {
+            margin: 0 5px;
+        }
+
+        /* Buttons Styling */
+        input[type="submit"], input[type="reset"] {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background-color: #4A90E2;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #357ABD;
+        }
+
+        /* Links Styling */
+        a {
+            color: #4A90E2;
+            text-decoration: none;
+            font-size: 14px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer styles */
+        hr {
+            margin-top: 30px;
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+
+        address {
+            font-size: 14px;
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #cadre {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Fiche d'Inscription</h1>
+        <div id="cadre">
+            <form action="" method="post" enctype="multipart/form-data">
+                <label for="matricule">Matricule*</label>
+                <input type="text" name="matricule" id="matricule" placeholder="Votre matricule" required><br>
+
+                <label for="nom">Nom*</label>
+                <input type="text" name="nom" id="nom" placeholder="Votre nom" required><br>
+
+                <label for="prenom">Prénom*</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required><br>
+
+                <label for="adresse">Adresse*</label>
+                <input type="text" name="adresse" id="adresse" placeholder="Votre adresse" required><br>
+
+                <label for="tel">Téléphone*</label>
+                <input type="tel" name="tel" id="tel" placeholder="Votre numéro de téléphone" required><br>
+
+                <label>Genre*</label>
+                M <input type="radio" value="M" name="genre">
+                F <input type="radio" value="F" name="genre"><br>
+
+                <label for="date_naiss">Date de Naissance*</label>
+                <input type="date" name="date_naiss" id="date_naiss" required><br>
+
+                <label for="couleur">Couleur Préférée</label>
+                <input type="color" name="couleur" id="couleur"><br>
+
+                <label>Langues Parlées</label><br>
+                Français <input type="checkbox" name="langue[]" value="français">
+                Anglais <input type="checkbox" name="langue[]" value="anglais">
+                Espagnol <input type="checkbox" name="langue[]" value="espagnol">
+                Arabe <input type="checkbox" name="langue[]" value="arabe"><br>
+
+                <label for="departement">Département*</label>
+                <select name="departement" id="departement" required>
+                    <option value="gi">Génie informatique</option>
+                    <option value="miage">Miage</option>
+                    <option value="droit">Droit</option>
+                    <option value="eco">Économie</option>
+                </select><br>
+
+                <label for="email">Email*</label>
+                <input type="email" name="email" id="email" placeholder="Votre email" required><br>
+
+                <label for="password">Mot de Passe*</label>
+                <input type="password" name="password" id="password" placeholder="Votre mot de passe" required><br>
+
+                <label for="cv">Votre CV*</label>
+                <input type="file" name="cv" id="cv" required><br>
+
+                <label for="message">Votre Message</label>
+                <textarea name="message" id="message" rows="5" cols="30" placeholder="Votre message"></textarea><br>
+
+                <p>J'accepte les conditions d'inscription <input type="checkbox" name="conditions" required></p>
+
+                <input type="reset" value="Annuler">
+                <input type="submit" value="Enregistrer">
+
+                <p>Vous avez déjà un compte? <a href="index.html">Connexion</a></p>
+            </form>
+        </div>
+        <hr>
+        <address>&copy; Décembre 2024 | Tous droits réservés | Conception et Réalisation UNC G3</address>
+    </center>
+</body>
+</html>

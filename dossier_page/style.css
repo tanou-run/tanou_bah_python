@@ -1,0 +1,389 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+
+h1{
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+header{
+    height: 100px;
+}
+
+footer{
+    height: 80px;
+    padding-top: 30px;
+    text-align: center;
+    background-color: #C5C5C5;
+    border-top: 2px solid #AAA;
+}
+
+nav{
+    width: 100%;
+    background-color: #424558;
+}
+
+nav ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li{
+    list-style-type: none;
+    float: left;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding:  20px 30px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.table{
+    display: table;
+    margin: 0 auto;
+}
+
+.menu-ind:hover{
+    border-top: 5px solid #4cb;
+    background-color: rgba(64, 200, 130, 0.15);
+}
+
+.menu-exp:hover{
+    border-top: 5px solid #f1dc4f;
+    background-color: rgba(241, 211, 79, 0.15);
+}
+
+.menu-hob:hover{
+    border-top: 5px solid #007088;
+    background-color: rgba(000, 112, 192, 0.15);
+}
+
+.menu-con:hover{
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+
+.menu-gale:hover{
+    border-top: 5px solid #26e443;
+    background-color: rgba(228, 38, 155, 0.15);
+}
+
+.menu-tele:hover{
+    border-top: 5px solid #c426e4;
+    background-color: rgba(232, 170, 154, 0.15);
+}
+
+nav li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+
+section{
+    width: 100%;
+    min-width: 300px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.sec{
+    margin: 0px 10px;
+}
+.left{
+    float: left;
+    width: 30%;
+}
+
+.right{
+    float: left;
+    width: 30%;
+}
+
+
+  .container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .profile img {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Bordure ronde */
+    object-fit: cover;
+  }
+
+  .profile .info {
+    flex: 1;
+  }
+
+  .info h2 {
+    margin: 0;
+    color: #333;
+  }
+
+  .info p {
+    margin: 5px 0;
+    color: #555;
+  }
+
+  .section-title {
+
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: #007BFF;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-title .emoji {
+    font-size: 1.2em;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+
+    text-align: center;
+  }
+
+  table th {
+    background-color: #007BFF;
+    color: white;
+  }
+
+  .tabs {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  .tabs button {
+    flex: 1;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .tabs button:hover {
+    background-color: #0056b3;
+  }
+
+  .tab-content {
+    display: none;
+    margin-top: 20px;
+  }
+
+  .tab-content.active {
+    display: block;
+  }
+
+  .tab-content {
+    display: block; /* Afficher le contenu de l'emploi du temps par défaut */
+}
+
+.tab-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tab-content table, .tab-content th, .tab-content td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.tab-content th {
+    background-color: #f2f2f2;
+}
+
+/* Style des onglets */
+.tabs label {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.tabs label:hover {
+    background-color: #45a049;
+}
+
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+.progress-bar-container {
+    margin: 20px 0;
+}
+.progress-bar-container label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+progress {
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+
+}
+.program-content {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #00aaff;
+}
+.links {
+    margin-top: 30px;
+    text-align: center;
+}
+.links a {
+    margin: 0 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.gallery img {
+    cursor: pointer;
+}
+
+.container-c {
+    display: flex;
+    justify-content: space-between;
+}
+.left-l {
+    width: 40%;
+
+}
+.right-r {
+    width: 55%;
+}
+h1 {
+    color: #333;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+form textarea {
+    resize: vertical;
+
+    height: 100px;
+}
+.social-icons a {
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.social-icons img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.progress-bar-container {
+    margin-bottom: 20px;
+}
+
+/* Style de la barre de progression */
+meter {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+/* Styles de couleurs en fonction de la valeur */
+meter[value="0"] {
+    background-color: red;
+}
+
+meter[value="1"], meter[value="2"], meter[value="3"], meter[value="4"], meter[value="5"] {
+    background-color: red;
+}
+
+meter[value="6"], meter[value="7"], meter[value="8"], meter[value="9"] {
+    background-color: orange;
+}
+
+meter[value="10"] {
+    background-color: green;
+}
+
+/* Au cas où un changement dynamique serait effectué */
+.program-content {
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width:780px){
+    header{
+        height: 50px;
+    }
+    h1{
+        font-size: 12px;
+        margin: 20px 0px 0px 0px;
+    }
+    nav li a{
+        font-size: 12px;
+        padding: 10px;
+    }
+    nav li:hover a{
+        padding: 5px 10px 10px 10px;
+    }
+}
